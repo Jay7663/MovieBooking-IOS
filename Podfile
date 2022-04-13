@@ -12,5 +12,6 @@ target 'MovieBooking' do
   
   # Firebase Authentication SDK
   pod 'Firebase/Auth'
-
+  pod 'SwiftyStarRatingView' ## Start Rating pod
+  pod 'Alamofire', '~> 5.5' ## Alamofire with API calling
 end
