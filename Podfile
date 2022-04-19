@@ -12,5 +12,8 @@ target 'MovieBooking' do
   
   # Firebase Authentication SDK
   pod 'Firebase/Auth'
+  
+  # Firestore database
+  pod 'Firebase/Firestore'
 
 end

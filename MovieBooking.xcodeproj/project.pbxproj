@@ -7,16 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		59CA4D52C4E5646A0B69D740 /* Pods_MovieBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70FEBAD17300F64BF12D77B2 /* Pods_MovieBooking.framework */; };
+		641943FA2805342800EEAF0E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 641943F92805342800EEAF0E /* GoogleService-Info.plist */; };
+		641AF91C27FDCD0400DE170C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641AF91B27FDCD0400DE170C /* LogInViewController.swift */; };
 		64A99EDD27FD9A28003BAE1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99EDC27FD9A28003BAE1F /* AppDelegate.swift */; };
 		64A99EDF27FD9A28003BAE1F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99EDE27FD9A28003BAE1F /* SceneDelegate.swift */; };
 		64A99EE127FD9A28003BAE1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64A99EE027FD9A28003BAE1F /* ViewController.swift */; };
 		64A99EE427FD9A28003BAE1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A99EE227FD9A28003BAE1F /* Main.storyboard */; };
 		64A99EE627FD9A2A003BAE1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64A99EE527FD9A2A003BAE1F /* Assets.xcassets */; };
 		64A99EE927FD9A2A003BAE1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64A99EE727FD9A2A003BAE1F /* LaunchScreen.storyboard */; };
+		64B713C02805744E00D1DF03 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B713BF2805744E00D1DF03 /* AppCoordinator.swift */; };
+		64B713C2280574B300D1DF03 /* AuthenticationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B713C1280574B300D1DF03 /* AuthenticationCoordinator.swift */; };
+		64B713C52805758400D1DF03 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B713C42805758400D1DF03 /* Storyboarded.swift */; };
+		64B713C7280576A400D1DF03 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B713C6280576A400D1DF03 /* Coordinator.swift */; };
+		64B7611E28042A63000C2D0A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7611D28042A63000C2D0A /* SignUpViewController.swift */; };
+		64B7612128042EF2000C2D0A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B7612028042EF2000C2D0A /* UIViewController.swift */; };
+		64BD3206280E81C3009A0439 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD3205280E81C3009A0439 /* CommonFunctions.swift */; };
+		64BD3208280EA9B0009A0439 /* Declarations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD3207280EA9B0009A0439 /* Declarations.swift */; };
+		64BD320A280EAE7F009A0439 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BD3209280EAE7F009A0439 /* UIView.swift */; };
+		64F467732807FFBD0028C78D /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F467722807FFBD0028C78D /* AuthenticationViewModel.swift */; };
+		9C436817DE7B007C53AADABE /* Pods_MovieBooking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC569C585E805C3BAE896C26 /* Pods_MovieBooking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D5E32336DA0F5FADD1F6D70 /* Pods-MovieBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieBooking.release.xcconfig"; path = "Target Support Files/Pods-MovieBooking/Pods-MovieBooking.release.xcconfig"; sourceTree = "<group>"; };
+		3591FD0926CB88531F1C1B80 /* Pods-MovieBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieBooking.debug.xcconfig"; path = "Target Support Files/Pods-MovieBooking/Pods-MovieBooking.debug.xcconfig"; sourceTree = "<group>"; };
+		641943F92805342800EEAF0E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		641AF91B27FDCD0400DE170C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		64A99ED927FD9A28003BAE1F /* MovieBooking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBooking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64A99EDC27FD9A28003BAE1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64A99EDE27FD9A28003BAE1F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,9 +41,17 @@
 		64A99EE527FD9A2A003BAE1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64A99EE827FD9A2A003BAE1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64A99EEA27FD9A2A003BAE1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70FEBAD17300F64BF12D77B2 /* Pods_MovieBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AE4F649833491EBA62B494B /* Pods-MovieBooking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieBooking.debug.xcconfig"; path = "Target Support Files/Pods-MovieBooking/Pods-MovieBooking.debug.xcconfig"; sourceTree = "<group>"; };
-		F426529CE9819BDECEF2517F /* Pods-MovieBooking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieBooking.release.xcconfig"; path = "Target Support Files/Pods-MovieBooking/Pods-MovieBooking.release.xcconfig"; sourceTree = "<group>"; };
+		64B713BF2805744E00D1DF03 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		64B713C1280574B300D1DF03 /* AuthenticationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationCoordinator.swift; sourceTree = "<group>"; };
+		64B713C42805758400D1DF03 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		64B713C6280576A400D1DF03 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		64B7611D28042A63000C2D0A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		64B7612028042EF2000C2D0A /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		64BD3205280E81C3009A0439 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
+		64BD3207280EA9B0009A0439 /* Declarations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Declarations.swift; sourceTree = "<group>"; };
+		64BD3209280EAE7F009A0439 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		64F467722807FFBD0028C78D /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		BC569C585E805C3BAE896C26 /* Pods_MovieBooking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieBooking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,21 +59,62 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59CA4D52C4E5646A0B69D740 /* Pods_MovieBooking.framework in Frameworks */,
+				9C436817DE7B007C53AADABE /* Pods_MovieBooking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AF622A18FA54B325C7FDCAC /* Pods */ = {
+		24A2378362B88CB78E426C4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8AE4F649833491EBA62B494B /* Pods-MovieBooking.debug.xcconfig */,
-				F426529CE9819BDECEF2517F /* Pods-MovieBooking.release.xcconfig */,
+				BC569C585E805C3BAE896C26 /* Pods_MovieBooking.framework */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6458F63D280708830055AA89 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6458F63E2807088E0055AA89 /* Authentication */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6458F63E2807088E0055AA89 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6458F641280708AF0055AA89 /* ViewModel */,
+				6458F640280708A20055AA89 /* ViewController */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6458F640280708A20055AA89 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				64A99EE027FD9A28003BAE1F /* ViewController.swift */,
+				641AF91B27FDCD0400DE170C /* LogInViewController.swift */,
+				64B7611D28042A63000C2D0A /* SignUpViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		6458F641280708AF0055AA89 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				64F467722807FFBD0028C78D /* AuthenticationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6458F642280708E30055AA89 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				64A99EE227FD9A28003BAE1F /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		64A99ED027FD9A28003BAE1F = {
@@ -57,8 +122,8 @@
 			children = (
 				64A99EDB27FD9A28003BAE1F /* MovieBooking */,
 				64A99EDA27FD9A28003BAE1F /* Products */,
-				0AF622A18FA54B325C7FDCAC /* Pods */,
-				F61C70C4E783D135E1FA4F1F /* Frameworks */,
+				F7135BFB119B0AD6890E028A /* Pods */,
+				24A2378362B88CB78E426C4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,23 +138,57 @@
 		64A99EDB27FD9A28003BAE1F /* MovieBooking */ = {
 			isa = PBXGroup;
 			children = (
+				6458F642280708E30055AA89 /* Storyboards */,
+				6458F63D280708830055AA89 /* Modules */,
+				64B713C32805756C00D1DF03 /* Utils */,
+				64B713BE2805730600D1DF03 /* Coordinators */,
+				64B7611F28042EB9000C2D0A /* Extensions */,
 				64A99EDC27FD9A28003BAE1F /* AppDelegate.swift */,
 				64A99EDE27FD9A28003BAE1F /* SceneDelegate.swift */,
-				64A99EE027FD9A28003BAE1F /* ViewController.swift */,
-				64A99EE227FD9A28003BAE1F /* Main.storyboard */,
 				64A99EE527FD9A2A003BAE1F /* Assets.xcassets */,
 				64A99EE727FD9A2A003BAE1F /* LaunchScreen.storyboard */,
+				641943F92805342800EEAF0E /* GoogleService-Info.plist */,
 				64A99EEA27FD9A2A003BAE1F /* Info.plist */,
 			);
 			path = MovieBooking;
 			sourceTree = "<group>";
 		};
-		F61C70C4E783D135E1FA4F1F /* Frameworks */ = {
+		64B713BE2805730600D1DF03 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				70FEBAD17300F64BF12D77B2 /* Pods_MovieBooking.framework */,
+				64B713C6280576A400D1DF03 /* Coordinator.swift */,
+				64B713BF2805744E00D1DF03 /* AppCoordinator.swift */,
+				64B713C1280574B300D1DF03 /* AuthenticationCoordinator.swift */,
 			);
-			name = Frameworks;
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		64B713C32805756C00D1DF03 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				64B713C42805758400D1DF03 /* Storyboarded.swift */,
+				64BD3205280E81C3009A0439 /* CommonFunctions.swift */,
+				64BD3207280EA9B0009A0439 /* Declarations.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		64B7611F28042EB9000C2D0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64B7612028042EF2000C2D0A /* UIViewController.swift */,
+				64BD3209280EAE7F009A0439 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7135BFB119B0AD6890E028A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3591FD0926CB88531F1C1B80 /* Pods-MovieBooking.debug.xcconfig */,
+				0D5E32336DA0F5FADD1F6D70 /* Pods-MovieBooking.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,11 +198,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64A99EED27FD9A2A003BAE1F /* Build configuration list for PBXNativeTarget "MovieBooking" */;
 			buildPhases = (
-				0714946A775F8AB5CD9F4049 /* [CP] Check Pods Manifest.lock */,
+				1BBEEBA08847BDABBC3ACD10 /* [CP] Check Pods Manifest.lock */,
 				64A99ED527FD9A28003BAE1F /* Sources */,
 				64A99ED627FD9A28003BAE1F /* Frameworks */,
 				64A99ED727FD9A28003BAE1F /* Resources */,
-				A792BAA3778FEBD5DAC70243 /* [CP] Embed Pods Frameworks */,
+				795DD7399E65C6ED3DC77B4D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -153,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				64A99EE927FD9A2A003BAE1F /* LaunchScreen.storyboard in Resources */,
+				641943FA2805342800EEAF0E /* GoogleService-Info.plist in Resources */,
 				64A99EE627FD9A2A003BAE1F /* Assets.xcassets in Resources */,
 				64A99EE427FD9A28003BAE1F /* Main.storyboard in Resources */,
 			);
@@ -161,7 +261,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0714946A775F8AB5CD9F4049 /* [CP] Check Pods Manifest.lock */ = {
+		1BBEEBA08847BDABBC3ACD10 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -183,7 +283,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A792BAA3778FEBD5DAC70243 /* [CP] Embed Pods Frameworks */ = {
+		795DD7399E65C6ED3DC77B4D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -207,9 +307,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				641AF91C27FDCD0400DE170C /* LogInViewController.swift in Sources */,
+				64B713C2280574B300D1DF03 /* AuthenticationCoordinator.swift in Sources */,
+				64B713C7280576A400D1DF03 /* Coordinator.swift in Sources */,
 				64A99EE127FD9A28003BAE1F /* ViewController.swift in Sources */,
+				64F467732807FFBD0028C78D /* AuthenticationViewModel.swift in Sources */,
+				64BD3208280EA9B0009A0439 /* Declarations.swift in Sources */,
+				64B7612128042EF2000C2D0A /* UIViewController.swift in Sources */,
+				64BD3206280E81C3009A0439 /* CommonFunctions.swift in Sources */,
 				64A99EDD27FD9A28003BAE1F /* AppDelegate.swift in Sources */,
+				64B713C52805758400D1DF03 /* Storyboarded.swift in Sources */,
+				64BD320A280EAE7F009A0439 /* UIView.swift in Sources */,
 				64A99EDF27FD9A28003BAE1F /* SceneDelegate.swift in Sources */,
+				64B7611E28042A63000C2D0A /* SignUpViewController.swift in Sources */,
+				64B713C02805744E00D1DF03 /* AppCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +464,7 @@
 		};
 		64A99EEE27FD9A2A003BAE1F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AE4F649833491EBA62B494B /* Pods-MovieBooking.debug.xcconfig */;
+			baseConfigurationReference = 3591FD0926CB88531F1C1B80 /* Pods-MovieBooking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,7 +493,7 @@
 		};
 		64A99EEF27FD9A2A003BAE1F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F426529CE9819BDECEF2517F /* Pods-MovieBooking.release.xcconfig */;
+			baseConfigurationReference = 0D5E32336DA0F5FADD1F6D70 /* Pods-MovieBooking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
