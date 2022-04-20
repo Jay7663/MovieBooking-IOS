@@ -10,5 +10,6 @@ target 'MovieBooking' do
   pod 'Firebase/Auth' ## Firebase Authentication SDK
   pod 'Firebase/Firestore'  ## Firestore database
   pod 'SwiftMessages' ## Custom Alerts Message
-
+  pod 'SwiftyStarRatingView' ## Start Rating pod
+  pod 'Alamofire', '~> 5.5' ## Alamofire with API calling
 end
