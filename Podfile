@@ -6,11 +6,9 @@ target 'MovieBooking' do
   use_frameworks!
 
   # Pods for MovieBooking
-
-  # Pods for BaseProject
-  pod 'Firebase/Analytics'
-  
-  # Firebase Authentication SDK
-  pod 'Firebase/Auth'
+  pod 'Firebase/Analytics'  ## Pods for BaseProject
+  pod 'Firebase/Auth' ## Firebase Authentication SDK
+  pod 'Firebase/Firestore'  ## Firestore database
+  pod 'SwiftMessages' ## Custom Alerts Message
 
 end
