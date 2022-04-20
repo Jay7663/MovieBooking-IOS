@@ -24,6 +24,9 @@ class LogInViewController: UIViewController, Storyboarded {
     // MARK: - File Private Functions
     fileprivate func bindViewModel() {
         authenticationViewModel.logInStatus = { message in
+            if message == "Success" {
+                self.coordinator?.goToHomeScreen()
+            }
             CustomAlert.customAlert(message: message, body: "", viewController: self)
         }
     }
@@ -62,7 +65,7 @@ class LogInViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func btnSignUp(_ sender: UIButton) {
-        coordinator?.popViewController()
+        //coordinator?.popViewController()
         coordinator?.startSignUp()
     }
     

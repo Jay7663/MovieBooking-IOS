@@ -17,20 +17,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="M52-DD-YXe">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="10" y="44" width="394" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="cp8-4e-NL0">
                                 <rect key="frame" x="188.5" y="434.5" width="37" height="37"/>
+                                <color key="color" red="0.98039215690000003" green="0.29411764709999999" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="M52-DD-YXe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="8UV-Lu-BDI"/>
+                            <constraint firstItem="M52-DD-YXe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="8UV-Lu-BDI"/>
                             <constraint firstItem="M52-DD-YXe" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9iz-Ub-5pl"/>
                             <constraint firstItem="cp8-4e-NL0" firstAttribute="centerY" secondItem="M52-DD-YXe" secondAttribute="centerY" id="Wsf-gI-Zy8"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M52-DD-YXe" secondAttribute="trailing" id="eOJ-ix-ANx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="M52-DD-YXe" secondAttribute="trailing" constant="10" id="eOJ-ix-ANx"/>
                             <constraint firstItem="cp8-4e-NL0" firstAttribute="centerX" secondItem="M52-DD-YXe" secondAttribute="centerX" id="pm7-80-WFE"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="M52-DD-YXe" secondAttribute="bottom" id="wzK-Rv-8yq"/>
                         </constraints>

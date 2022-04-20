@@ -7,6 +7,7 @@ class AuthenticationViewModel {
     // MARK: - Variables
     var logInStatus: ((String) -> Void)?
     var signUpStatus: ((String) -> Void)?
+    let userDefaults = UserManager()
     
     // MARK: - File Private Functions
     func doLogIn(_ email: String, _ password: String) {
@@ -19,6 +20,7 @@ class AuthenticationViewModel {
                 if let _ = error {
                     uSelf.logInStatus?("Unsuccess")
                 } else {
+                    uSelf.userDefaults.isUserLogin = true
                     uSelf.logInStatus?("Success")
                 }
             }
@@ -51,6 +53,7 @@ class AuthenticationViewModel {
                 } else {
                     if let uid = result?.user.uid {
                         db.collection("users").document(uid).setData(["firstname":firstName, "lastname":lastName, "email": email])
+                        uSelf.userDefaults.isUserLogin = true
                         uSelf.signUpStatus?("Success")
                     }
                 }

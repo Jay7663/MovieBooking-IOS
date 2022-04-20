@@ -8,7 +8,7 @@
 import UIKit
 import Alamofire
 
-class HomeScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController, Storyboarded {
 
     // MARK: - Outlets
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
@@ -18,6 +18,7 @@ class HomeScreenViewController: UIViewController {
     var coordinator: HomeScreenCoordinator?
     var homeScreenViewModel = HomeScreenViewModel()
     var fetchedMoiveData = [Result]()
+    let userDefaults = UserManager()
     
     //MARK: - UIViewController
     override func viewDidLoad() {
@@ -27,12 +28,20 @@ class HomeScreenViewController: UIViewController {
     
     // MARK: - File Private Functions
     fileprivate func initalSetup() {
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "rectangle.portrait.and.arrow.right"), style: .plain, target: self, action: #selector(logoutAction))
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor(red: 150/255.0, green: 75/255.0, blue: 12/255.0, alpha: 1)
         activityIndicator.startAnimating()
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: "TableViewCell")
         homeScreenViewModel.getMovieData()
         bindData()
+    }
+    
+    @objc fileprivate func logoutAction() {
+        userDefaults.isUserLogin = false
+        coordinator?.backToLogin()
     }
     
     fileprivate func bindData() {
@@ -70,7 +79,7 @@ extension HomeScreenViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath)
     {
-        let verticalPadding: CGFloat = 20
+        let verticalPadding: CGFloat = 10
         let maskLayer = CALayer()
         maskLayer.cornerRadius = 10
         maskLayer.backgroundColor = UIColor.black.cgColor

@@ -4,15 +4,20 @@ import UIKit
 class AuthenticationCoordinator: Coordinator {
     
     var navController: UINavigationController?
+    let userDefaults = UserManager()
     
     init (_ navigationController: UINavigationController) {
         navController = navigationController
     }
     
     func start() {
-        let homeScreenVC = ViewController.instantiate(from: .main)
-        homeScreenVC.coordinator = self
-        navController?.pushViewController(homeScreenVC, animated: true)
+        userDefaults.isUserLogin ? goToHomeScreen() : goToAuthenticationVC()
+    }
+    
+    func goToAuthenticationVC() {
+        let authenticationVC = ViewController.instantiate(from: .main)
+        authenticationVC.coordinator = self
+        navController?.pushViewController(authenticationVC, animated: true)
     }
     
     func startLogIn() {
@@ -29,6 +34,13 @@ class AuthenticationCoordinator: Coordinator {
     
     func popViewController() {
         navController?.popViewController(animated: false)
+    }
+    
+    func goToHomeScreen() {
+        if let navController = navController {
+            let homeScreenCoordinator = HomeScreenCoordinator(navController)
+            homeScreenCoordinator.start()
+        }
     }
     
     func finish() {
